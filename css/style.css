@@ -1,0 +1,285 @@
+
+h1{
+	font-size: 3em; 
+    font-weight: bold;
+    color:  rgba(255, 255, 255, 0.75);
+
+}
+
+h2{
+	font-size: 2em; 
+	font-weight: bold;
+}
+
+img{
+    height: 250px;
+    width: auto;
+    margin: 10px;
+}
+
+body{
+    background-image: url(../imgs/night-background.jpeg);
+}
+
+p, h1, h2 {
+    padding: 10px;
+}
+
+nav li{
+	padding-right: 20px;
+    display: inline;
+}
+
+nav {
+    background-image: url(../imgs/night-background.jpeg);
+    padding: 25px 0;
+    text-align: right;
+}
+
+nav a{
+    color:rgba(255, 255, 255, 0.75);
+    font-weight: bold;
+    text-decoration: none;
+  
+  }
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+nav .current{
+    text-decoration: underline;
+    color: rgba(0, 238, 255, 0.904);
+}
+
+.skip a{
+    background: rgba(255, 255, 255, 0.75);
+    left: 0;
+    padding: 7px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -50px;
+  
+  }
+.skip a:focus{
+    position: absolute;
+    top: 20px;
+  }
+
+footer{
+    color: rgba(255, 255, 255, 0.75);
+    text-align: left;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+  
+  }
+
+.about{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+
+.about-image{
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.growing{
+    grid-column: 1/-1;
+    grid-row: 3/4;
+}
+
+.growing-image{
+  grid-column: 1/-1;
+  grid-row: 4/5;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.family{
+    grid-column: 1/-1;
+    grid-row: 5/6;
+}
+.family-image{
+  grid-column: 1/-1;
+  grid-row: 6/7;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.text{
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 5px solid black;
+    padding: 30px;
+    align-self: center;
+  }
+
+.school-page{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+.ls{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ls-image{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hs{
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.hs-image{
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.college{
+    margin-left: auto;
+  margin-right: auto;
+
+}
+.college-image{
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.sports-page{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.career{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.career-image{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-image{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.athlete{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.athlete-image{
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.professional-page{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.teacher{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.teacher-image{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.math{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.math-image{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.homrun{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.homrun-image{
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+@media all and (min-width: 880px){
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  
+  }
+
+.about{
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 2;
+  }
+
+.about-image{
+    grid-column: 4 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.growing{
+    grid-column: 3 / -1;
+    grid-row: 3 / span 2;
+}
+
+.growing-image{
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 2;
+}
+
+.family{
+    grid-column: 1 / span 3;
+    grid-row: 5 / span 2;
+}
+.family-image{
+    grid-column: 4 / span 2;
+    grid-row: 5 / span 2;
+}
+}
